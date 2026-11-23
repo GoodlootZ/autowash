@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoWash — профессиональная мойка и детейлинг автомобилей.">
+  <title>AutoWash — мойка и детейлинг</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script
+  src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+  async
+  defer
+  ></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="AutoWash — на главную">
+        <span class="logo__mark">Auto<span>Wash</span></span>
+        <span class="logo__caption">МОЙКА • ДЕТЕЙЛИНГ</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a class="header__phone" href="tel:+79648555462">☎ <span>+7 (964) 855-54-62</span></a>
+      <a class="button button--small" href="#booking">Записаться</a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__image" role="img" aria-label="Чёрный автомобиль в детейлинг-центре"></div>
+      <div class="container hero__content">
+        <p class="eyebrow">ПРЕМИАЛЬНЫЙ УХОД ЗА АВТОМОБИЛЕМ</p>
+        <h1>Безупречная<br>чистота вашего<br><span>автомобиля</span></h1>
+        <p class="hero__text">Профессиональная мойка и детейлинг<br class="desktop-only"> с заботой о вашем авто</p>
+        <div class="hero__actions">
+          <a class="button" href="#booking">Записаться на мойку <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="#services"><span class="play-icon">▶</span> Узнать больше</a>
+        </div>
+        <div class="hero__note"><span class="status-dot"></span> Работаем ежедневно с 08:00 до 22:00</div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <span></span><h2>Наши услуги</h2><span></span>
+        </div>
+        <div class="service-grid">
+          <article class="service-card service-card--wash">
+            <div class="service-card__body"><span class="service-card__icon">◉</span><h3>Комплексная мойка</h3><p>Быстро и качественно</p><a href="#booking" aria-label="Записаться на комплексную мойку">↗</a></div>
+          </article>
+          <article class="service-card service-card--interior">
+            <div class="service-card__body"><span class="service-card__icon">♧</span><h3>Химчистка салона</h3><p>Чистота внутри</p><a href="#booking" aria-label="Записаться на химчистку">↗</a></div>
+          </article>
+          <article class="service-card service-card--polish">
+            <div class="service-card__body"><span class="service-card__icon">✧</span><h3>Полировка кузова</h3><p>Блеск и защита</p><a href="#booking" aria-label="Записаться на полировку">↗</a></div>
+          </article>
+          <article class="service-card service-card--ceramic">
+            <div class="service-card__body"><span class="service-card__icon">⬡</span><h3>Нанесение керамики</h3><p>Долговечный эффект</p><a href="#booking" aria-label="Записаться на нанесение керамики">↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--prices" id="prices">
+      <div class="container">
+        <div class="section-heading">
+          <span></span><h2>Прайс-лист</h2><span></span>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <h3>Стандарт</h3><p class="price-card__subtitle">Базовая мойка автомобиля</p>
+            <p class="price">от 1 500 ₽</p>
+            <ul><li>Мойка кузова</li><li>Сушка</li><li>Чистка стёкол</li></ul>
+            <a class="button button--outline" href="#booking">Записаться</a>
+          </article>
+          <article class="price-card price-card--featured">
+            <div class="popular">ПОПУЛЯРНЫЙ ВЫБОР</div>
+            <h3>Премиум</h3><p class="price-card__subtitle">Расширенный уход за авто</p>
+            <p class="price">от 2 500 ₽</p>
+            <ul><li>Мойка кузова и дисков</li><li>Химчистка салона</li><li>Полировка пластика</li></ul>
+            <a class="button" href="#booking">Записаться</a>
+          </article>
+          <article class="price-card">
+            <h3>Детейлинг</h3><p class="price-card__subtitle">Максимальный уход</p>
+            <p class="price">от 5 000 ₽</p>
+            <ul><li>Комплексный уход</li><li>Нанесение керамики</li><li>Защита ЛКП</li></ul>
+            <a class="button button--outline" href="#booking">Записаться</a>
+          </article>
+        </div>
+        <p class="section-hint">Итоговая стоимость зависит от класса автомобиля и выбранных услуг.</p>
+      </div>
+    </section>
+
+    <section class="section advantages" id="advantages">
+      <div class="container">
+        <div class="section-heading"><span></span><h2>Почему выбирают нас?</h2><span></span></div>
+        <div class="advantage-grid">
+          <div class="advantage"><span>◇</span><h3>Опытные мастера</h3><p>Более 5 лет практики</p></div>
+          <div class="advantage"><span>⬡</span><h3>Профессиональная химия</h3><p>Проверенные средства и оборудование</p></div>
+          <div class="advantage"><span>◷</span><h3>Быстрое обслуживание</h3><p>От 30 минут</p></div>
+          <div class="advantage"><span>♡</span><h3>Удобная запись</h3><p>Выберите комфортное время</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading"><span></span><h2>Наши работы</h2><span></span></div>
+        <div class="gallery-grid">
+          <img src="auto.avif" alt="Детализированный автомобиль" loading="lazy">
+          <img src="auto2.avif" alt="Чёрный спортивный автомобиль" loading="lazy">
+          <img src="auto3.avif" alt="Мойка автомобиля" loading="lazy">
+          <img src="auto5.avif" alt="Автомобиль после детейлинга" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contacts">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-heading section-heading--left"><h2>Контакты</h2><span></span></div>
+          <div class="contact-item"><b>⌖</b><p>г. Москва,<br>ул. Автомобильная, д. 1</p></div>
+          <div class="contact-item"><b>◷</b><p>Ежедневно<br>с 08:00 до 22:00</p></div>
+          <div class="contact-item"><b>☎</b><p><a href="tel:+79648555462">+7 (964) 855-54-62</a></p></div>
+          <div class="socials"><a href="t.me/voronkov_kirill" aria-label="Telegram">tg</a><a href="vk.ru/1voronkovk" aria-label="ВКонтакте">vk</a></div>
+        </div>
+
+        
+        <form class="booking" id="booking">
+          <h2>Записаться на мойку</h2>
+          <p>Оставьте заявку, и мы свяжемся с вами в ближайшее время</p>
+
+          <div class="booking__fields">
+            <label>
+              <span class="visually-hidden">Ваше имя</span>
+              <input
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                minlength="2"
+                maxlength="80"
+                autocomplete="name"
+                required
+              >
+            </label>
+
+            <label>
+              <span class="visually-hidden">Телефон</span>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Телефон"
+                maxlength="25"
+                autocomplete="tel"
+                required
+              >
+            </label>
+          </div>
+
+          <label class="visually-hidden" for="service">
+            Выберите услугу
+          </label>
+
+          <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="Комплексная мойка">Комплексная мойка</option>
+            <option value="Химчистка салона">Химчистка салона</option>
+            <option value="Полировка кузова">Полировка кузова</option>
+            <option value="Нанесение керамики">Нанесение керамики</option>
+          </select>
+
+          <!--Против ботов-->
+          <div class="hp-field" aria-hidden="true">
+            <label>
+              Не заполняйте это поле
+              <input
+                type="text"
+                name="company"
+                tabindex="-1"
+                autocomplete="off"
+              >
+            </label>
+          </div>
+
+          <!-- Cloudflare Turnstile -->
+          <div
+            class="cf-turnstile"
+            data-sitekey="YOUR_TURNSTILE_SITE_KEY"
+            data-action="booking"
+          ></div>
+
+          <label class="booking__consent">
+            <input type="checkbox" name="consent" required>
+            <span>
+              Согласен на обработку персональных данных
+              согласно <a href="/privacy.html" target="_blank">политике конфиденциальности</a>.
+            </span>
+          </label>
+
+          <button class="button booking__submit" type="submit">
+            Отправить заявку <span>→</span>
+          </button>
+
+          <small>
+            Мы используем данные только для связи по вашей заявке.
+          </small>
+
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="footer__brand" href="#top">Auto<span>Wash</span></a>
+      <p>© 2026 AutoWash. Все права защищены.</p>
+      <div><a href="#">Политика конфиденциальности</a><a href="#">Пользовательское соглашение</a></div>
+    </div>
+  </footer>
+
+  <script>
+  const bookingForm = document.querySelector('#booking');
+  const formMessage = document.querySelector('.form-message');
+  const submitButton = bookingForm.querySelector('.booking__submit');
+
+  // Адрес отдельного PHP Backend
+  const API_URL = 'https://YOUR-BACKEND-DOMAIN/send.php';
+
+  // Время открытия страницы
+  const formStartedAt = Date.now();
+
+  bookingForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      formMessage.textContent = '';
+
+      if (!bookingForm.reportValidity()) {
+          return;
+      }
+
+      const turnstileToken = bookingForm.querySelector(
+          '[name="cf-turnstile-response"]'
+      )?.value;
+
+      if (!turnstileToken) {
+          formMessage.textContent =
+              'Пройдите проверку безопасности.';
+          return;
+      }
+
+      const formData = new FormData(bookingForm);
+
+      const data = {
+          name: formData.get('name'),
+          phone: formData.get('phone'),
+          service: formData.get('service'),
+          company: formData.get('company'),
+          consent: formData.get('consent') === 'on',
+          startedAt: formStartedAt,
+          turnstileToken: turnstileToken
+      };
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Отправка...';
+
+      try {
+          const response = await fetch(API_URL, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+          });
+
+          const result = await response.json();
+
+          if (!response.ok) {
+              throw new Error(result.message || 'Ошибка отправки');
+          }
+
+          formMessage.textContent =
+              'Заявка успешно отправлена! Мы скоро свяжемся с вами.';
+
+          bookingForm.reset();
+
+      } catch (error) {
+          formMessage.textContent =
+              error.message || 'Не удалось отправить заявку. Попробуйте позже.';
+
+      } finally {
+          submitButton.disabled = false;
+          submitButton.innerHTML =
+              'Отправить заявку <span>→</span>';
+
+          if (window.turnstile) {
+              window.turnstile.reset();
+          }
+      }
+  });
+
+  </script>
+</body>
+</html>
