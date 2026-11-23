@@ -198,19 +198,21 @@
           </div>
 
           <!-- Cloudflare Turnstile -->
-          <div
-            class="cf-turnstile"
-            data-sitekey="0x4AAAAAAGO3kGa2GCen9AHN"
-            data-action="booking"
-          ></div>
 
-          <label class="booking__consent">
-            <input type="checkbox" name="consent" required>
-            <span>
-              Согласен на обработку персональных данных
-              согласно <a href="/privacy.html" target="_blank">политике конфиденциальности</a>.
-            </span>
-          </label>
+          <div class="form-captcha">
+              <div class="cf-turnstile"
+                  data-sitekey="0x4AAAAAAGO3kGa2GCen9AHN">
+              </div>
+          </div>
+
+          <div class="form-consent">
+              <input type="checkbox" id="consent" required>
+
+              <label for="consent">
+                  Согласен на обработку персональных данных
+                  согласно <a href="/privacy">политике конфиденциальности</a>.
+              </label>
+          </div>
 
           <button class="button booking__submit" type="submit">
             Отправить заявку <span>→</span>
