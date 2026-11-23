@@ -286,3 +286,37 @@ img { display: block; max-width: 100%; }
     color: inherit;
     text-decoration: underline;
 }
+
+.form-captcha {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.form-consent input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin: 2px 0 0;
+}
+
+.form-consent label {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.form-consent a {
+    color: #ffb900;
+}
