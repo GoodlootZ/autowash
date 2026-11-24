@@ -239,12 +239,13 @@
   </footer>
 
   <script>
+    /*
   const bookingForm = document.querySelector('#booking');
   const formMessage = document.querySelector('.form-message');
   const submitButton = bookingForm.querySelector('.booking__submit');
 
   // Адрес отдельного PHP Backend
-  const API_URL = 'https://localhost:8082/send.php';
+  const API_URL = 'https://backend-domain/send.php';
 
   // Время открытия страницы
   const formStartedAt = Date.now();
@@ -316,8 +317,31 @@
               window.turnstile.reset();
           }
       }
+  });*/  
+
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('.nav');
+
+  menuButton.addEventListener('click', () => {
+    const isOpen = navigation.classList.toggle('nav--open');
+    menuButton.setAttribute('aria-expanded', String(isOpen));
   });
 
+  navigation.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('nav--open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+
+  //Php обработка убрана
+  document.querySelector('.booking').addEventListener('submit', (event) => {
+    event.preventDefault();
+    document.querySelector('.form-message').textContent =
+      'Заявка успешно отправлена! Мы скоро свяжемся с вами.';
+  });
+  
   </script>
 </body>
 </html>
